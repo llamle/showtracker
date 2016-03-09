@@ -10,23 +10,23 @@ var app = angular.module('MyApp', ['ngCookies', 'ngResource', 'ngMessages', 'ngR
 
         $routeProvider
             .when('/', {
-                templateUrl: 'views/home.html',
+                templateUrl: 'public/views/home.html',
                 controller: 'MainCtrl'
             })
             .when('/shows/:id', {
-                templateUrl: 'views/detail.html',
+                templateUrl: 'public/views/detail.html',
                 controller: 'DetailCtrl'
             })
             .when('/login', {
-                templateUrl: 'views/login.html',
+                templateUrl: 'public/views/login.html',
                 controller: 'LoginCtrl'
             })
             .when('/signup', {
-                templateUrl: 'views/signup.html',
+                templateUrl: 'public/views/signup.html',
                 controller: 'SignupCtrl'
             })
             .when('/add', {
-                templateUrl: 'views/add.html',
+                templateUrl: 'public/views/add.html',
                 controller: 'AddCtrl'
             })
             .otherwise({
